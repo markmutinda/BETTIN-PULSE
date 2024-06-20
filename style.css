@@ -1,0 +1,359 @@
+body{
+    height: 3000px;
+    background-color: #3E3E3E;
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    border: none;
+    padding-left: 160px;
+}
+/*-----------------header---------------*/
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    background-color: #000000;
+    box-shadow: 0 2px 5px rgba(10, 30, 2, 1.2);
+    border: none;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100px;
+    font-size: 30px;
+    
+}
+
+.left-section {
+   color: white;
+    width: 300px;
+    
+} 
+    
+.right-section{
+    display: flex;
+    width: 300px;
+    align-items: center;
+    margin-left: 300px; 
+}
+
+.right-section button {
+    display: flex;
+}
+
+
+.register-button{
+    font-family: 'Dongle', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+
+    background-color: #1475E1;
+    padding: 10px;
+    font-size: 400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s
+}
+.login-button{
+   font-family: 'Dongle', sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    border: none;
+    margin-left: 20px;
+    cursor: pointer;
+  
+}
+.register-button:hover {
+    background-color: rgba(20, 117, 225, 0.7); /* Adjust the opacity as needed */
+}
+
+/*--------------------sidebar--------------------------------------*/
+
+.side-bar{
+ border: none;    
+ position: fixed;
+ display: flex;
+ background-color: black;
+ top: 100px;
+ bottom: 0px;
+ left: 0;
+ width: 150px;
+ box-shadow: 0 2px 5px rgba(10, 30, 2, 1.2);
+ flex-direction: column;
+ padding: 10px;
+ 
+       
+}
+  
+ion-icon {
+  color: white;
+ font-size: 24px;
+    margin-top: 7px;
+    
+    
+}
+
+.sidebar-section{
+    background-color: lightslategrey;
+    border-radius: 10px;
+    padding: 4px;
+    
+    
+}
+
+.text-icon{
+    color: black;
+    z-index: 100;
+}
+.game-button {
+    border: none;
+    background-color: lightslategrey;
+    color: white;
+    margin-bottom: 20px; 
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family: 'Dongle', sans-serif;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Remove default underline */
+    overflow: hidden;
+}
+
+.game-button::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px; /* Initial height of the underline */
+    width: 100%;
+    background-color: black; /* Color of the underline, adjust as needed */
+    transform: scaleX(0); /* Initial state: invisible */
+    transform-origin: 0% 50%;
+    transition: transform 0.3s ease; /* Animation duration and easing function */
+}
+
+.game-button:hover::after {
+    transform: scaleX(1); /* Fully visible on hover */
+}
+.games-button{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+/*-----------------registration styles---------------*/
+.register-body {
+    height: 3000px;
+    background-color: #3E3E3E;
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    border: none;
+    padding-left: 160px;
+}
+
+.register-container {
+    width: 100vh;
+    max-width: 400px;
+    margin: 200px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #1475E1;
+    font-family: 'Dongle', sans-serif;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container label {
+    margin-bottom: 8px;
+    color: #808080;
+    font-family: 'Dongle', sans-serif;
+}
+
+.register-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register-submit-button {
+    background-color: #1475E1;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 24px;
+    font-family: 'Dongle', sans-serif;
+}
+
+.register-submit-button:hover {
+    background-color: rgba(20, 117, 225, 0.7);
+}
+
+/*-----------------login styles---------------*/
+.login-body {
+    height: 3000px;
+    background-color: #3E3E3E;
+    margin: 0;
+    font-family: 'Dongle', sans-serif;
+    border: none;
+    padding-left: 160px;
+}
+
+.login-container {
+    width: 100vh;
+    max-width: 400px;
+    margin: 240px auto;
+    padding: 20px;
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #1475E1;
+    font-family: 'Dongle', sans-serif;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 8px;
+    color: #808080;
+    font-family: 'Dongle', sans-serif;
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+.login-submit-button {
+    background-color: #1475E1;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Dongle', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-top: 24px;
+}
+
+.login-submit-button:hover {
+    background-color: rgba(20, 117, 225, 0.7);
+}
+
+/* Popup overlay styles */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Popup styles */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.3s ease-out;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.popup-content {
+    background: transparent;
+    padding: 20px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    animation: slideIn 0.3s ease-out;
+    overflow: hidden;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #1475E1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
