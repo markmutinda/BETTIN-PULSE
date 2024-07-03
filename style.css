@@ -15,6 +15,7 @@ body {
 .center-section .button-group {
     display: flex;
     justify-content: space-evenly;
+    width: 500px;
 
     
 }
@@ -74,6 +75,7 @@ body {
 
 .right-section {
     display: flex;
+    justify-content: space-around;
     width: 150px;
     align-items: center;
     margin-left: 300px;
@@ -81,6 +83,14 @@ body {
 
 .right-section button {
     display: flex;
+    
+
+}
+
+.profile-button{
+    height: 5px;
+    width: 5px;
+    
 }
 
 .register-button {
@@ -96,7 +106,20 @@ body {
     cursor: pointer;
     transition: background-color 0.3s
 }
+.logout-button {
+    font-family: 'Dongle', sans-serif;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #1475E1;
+    padding: 10px;
+    font-size: 400;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s
 
+}
 .login-button {
     font-family: 'Dongle', sans-serif;
     background-color: black;
@@ -382,3 +405,4 @@ h2 {
 .login-submit-button:hover {
     background-color: rgba(20, 117, 225, 0.7);
 }
+
