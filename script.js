@@ -95,3 +95,22 @@ document.addEventListener("DOMContentLoaded", function () {
     item.classList.add("slide-in");
   });
 });
+// profile popup
+function togglePopup() {
+  var popup = document.getElementById('popup');
+  if (popup.style.display === 'none' || popup.style.display === '') {
+      popup.style.display = 'block';
+  } else {
+      popup.style.display = 'none';
+  }
+}
+
+// Close the popup when clicking outside of it
+window.onclick = function(event) {
+  var popup = document.getElementById('popup');
+  if (!event.target.closest('.right-section')) {
+      if (popup.style.display === 'block') {
+          popup.style.display = 'none';
+      }
+  }
+}

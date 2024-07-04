@@ -27,7 +27,17 @@
         </div>
         
         <div class="right-section">
-            <button> <img src="images/profile.png" alt="" style="width:30px;height:30px;"> 
+            <button class="profile-button" onclick="togglePopup()">
+                <img src="images/profile.png" alt="" style="width:30px;height:30px;border-radius:200%;">
+            </button>
+            <div class="popup" id="popup">
+                <ul>
+                    <li onclick="alert('Settings')">Settings</li>
+                    <li onclick="alert('My Bets')">My Bets</li>
+                    <li onclick="alert('Transaction')">Transaction</li>
+                </ul>
+            </div>
+            
             </button>
             <button class="logout-button">logout</button>
         </div>

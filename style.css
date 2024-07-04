@@ -74,11 +74,12 @@ body {
 }
 
 .right-section {
-    display: flex;
-    justify-content: space-around;
-    width: 150px;
-    align-items: center;
-    margin-left: 300px;
+        display: flex;
+        justify-content: space-around;
+        width: 150px;
+        align-items: center;
+        margin-left: 300px;
+        position: relative;
 }
 
 .right-section button {
@@ -87,11 +88,44 @@ body {
 
 }
 
-.profile-button{
-    height: 5px;
-    width: 5px;
-    
+.popup {
+    display: none;
+    position: absolute;
+    top: 70px; /* Adjust to position the popup below the button */
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    width: 150px;
 }
+
+
+.popup ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup ul li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.popup ul li:hover {
+    background-color: #f0f0f0;
+}
+
+.profile-button {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+    
+
 
 .register-button {
     font-family: 'Dongle', sans-serif;
